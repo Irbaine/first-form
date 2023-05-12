@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="cars/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rochester&display=swap" rel="stylesheet">
+    <title>Cars For Sale Next To You</title>
+</head>
+<body>
+	<!--Tag Manager -->
+
+    <form class="form">
+
+		<!-- STEP 1 -->
+		<div class="step" id="s1" >
+			<img class="step__logo" src="cars/logo2.png" >
+
+			<h1 class="step__title">
+				Find <strong>Cheap Cars</strong> <br>
+				For Sale in <strong>Your Area</strong>
+			</h1>
+
+			<img class="step__intro" src="cars/lambo.jpg">
+
+			<h2 class="step__warning">All Your Data Will Be Secured!</h2>
+
+			<button type="button" class="step__button step__button1">
+				Find Cars
+			</button>
+		</div>
+
+		<!-- STEP 2 -->
+		<div class="step" id="s2" style="display: none;">
+			<div class="header header_absolute">
+				<div class="header__container">
+					<img class="header__container__logo" src="cars/logo2.png">
+					<img class="header__container__chat" src="cars/chat_off.svg">
+				</div>
+			</div>   
+
+			<div class="step__circle step__circle-outer"></div>
+			<div class="step__circle step__circle-outer step__circle-outer_delay"></div>
+			<div class="step__circle step__circle-inner"></div>
+			<div class="step__circle step__circle-inner step__circle-inner_delay"></div>
+
+			<div class="step__map">
+				<img class="step__map__pin_shadow" src="cars/map-pin-shadow.svg">
+				<img class="step__map__pin" src="cars/map-pin.svg">
+
+				<div class="step__map__text">
+					<span>Verifiying Your<strong> Location</strong> </span>
+					<geoip info="country_code" ng-model="country" ></geoip>
+					<geoip info="zipcode" ng-model="zipcode" ></geoip>
+				</div>
+			</div>
+		</div>
+
+		<!-- STEP 3 -->
+		<div class="step" id="s3" style="display: none;">
+			<div class="header">
+				<div class="header__container">
+					<img class="header__container__logo" src="cars/logo2.png">
+					<img class="header__container__chat" src="cars/chat_off.svg">
+				</div>
+			</div>
+
+			<div class="step__car">
+				<div class="car" style="background-image: url(&quot;cars/2002.jpg&quot;);">
+					<div class="car__info">
+						<span class="car__info__name" >Mustang</span>
+						<span class="car__info__age" >2002</span>
+						<span class="car__info__distance" >2.5</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="step__text">
+				<div class="step__text__content">
+					<label class="step__label">Are you fan of <strong>Classic</strong> old Cars ?</label>
+				</div>
+			</div>
+
+			<div class="step__buttons" >
+				<div class="step__buttons__button" id="s3a">
+					<img class="step__buttons__button__icon" src="cars/no.svg">
+				</div>
+
+				<div class="step__buttons__button" id="s3b">
+					<img class="step__buttons__button__icon" src="cars/yes.svg">
+				</div>
+			</div>
+		</div>
+
+		<!-- STEP 4 -->
+		<div class="step" id="s4" style="display: none;">
+			<div class="header">
+				<div class="header__container">
+					<img class="header__container__logo" src="cars/logo2.png">
+					<img class="header__container__chat" src="cars/chat_off.svg">
+				</div>
+			</div>
+
+			<div class="step__car">
+				<div class="car" style="background-image: url(&quot;cars/2017.jpg&quot;);">
+					<div class="car__info">
+						<span class="car__info__name">Mustang</span>
+						<span class="car__info__age">2017</span>
+						<span class="car__info__distance" >4</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="step__text">
+				<div class="step__text__content">
+					<label class="step__label step__label-small">We need to know a little about you.</label>
+					<label class="step__label">Do You Like <strong>Fast Cars ?</strong></label>
+				</div>
+			</div>
+
+			<div class="step__buttons" >
+				<div class="step__buttons__button" id="s4a">
+					<img class="step__buttons__button__icon" src="cars/no.svg">
+				</div>
+
+				<div class="step__buttons__button" id="s4b" >
+					<img class="step__buttons__button__icon" src="cars/yes.svg">
+				</div>
+			</div>
+		</div>
+
+		<!-- STEP 5 -->
+		<div class="step" id="s5"style="display: none;">
+			<div class="header">
+				<div class="header__container">
+					<img class="header__container__logo" src="cars/logo2.png">
+					<img class="header__container__chat" src="cars/chat_off.svg">
+				</div>
+			</div>
+
+			<div class="step__car">
+				<div class="car" style="background-image: url(&quot;cars/2014.jpg&quot;);">
+					<div class="car__info">
+						<span class="car__info__name">Mercedes Benz</span>
+						<span class="car__info__age">2014</span>
+						<span class="car__info__distance">3.5</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="step__text">
+				<div class="step__text__content">
+					<label class="step__label step__label-small">We need to know a little about you.</label>
+					<label class="step__label">Do you like <strong>Mercedes ?</strong></label>
+				</div>
+			</div>
+
+			<div class="step__buttons">
+				<div class="step__buttons__button" id="s5a">
+					<img class="step__buttons__button__icon" src="cars/no.svg">
+				</div>
+
+				<div class="step__buttons__button" id="s5b">
+					<img class="step__buttons__button__icon" src="cars/yes.svg">
+				</div>
+			</div>
+		</div>
+
+		<!-- STEP 8 -->
+		<div class="step" id="s8" style="display: none;">
+			<div class="header">
+				<div class="header__container">
+					<img class="header__container__logo" src="cars/logo2.png">
+					<img class="header__container__chat" src="cars/chat_off.svg">
+				</div>
+			</div>
+
+			<label class="step__label step__label_extra">We need to know that you are eligibale for buying cars.</label>
+
+			<label class="step__label"><br><br>Confirm you are <strong>over 18</strong> to continue.</label>
+
+			<div class="step__field">
+				<input class="step__field__input " name="age" type="number" >
+				<div class="step__field__placeholder" data-placeholder="age">Enter Age</div>
+				<div class="step__field__valid" style="display: none;"></div>
+				<div class="step__field__error" data-error="age" style="display: none;"></div>
+			</div>
+            <div id="invalid"></div>
+			<button type="button" class="step__button step__button_extra">
+				Click for more cars!
+			</button>
+		</div>
+
+		<!-- STEP 10 -->
+		<div class="step" id="s10" style="display: none;">
+			<div class="header">
+				<div class="header__container">
+					<img class="header__container__logo" src="cars/logo2.png">
+					<img class="header__container__chat" src="cars/chat.svg">
+				</div>
+			</div>
+
+			<div class="step__car">
+				<div class="car" style="background-image: url(&quot;cars/2020.jpg&quot;);">
+					<div class="car__info">
+						<span class="car__info__name" >Audi RS 3</span>
+						<span class="car__info__age">2020</span>
+						<span class="car__info__distance">4</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="step__text">
+				<div class="step__text__content">
+					<label class="step__label">Do you like <strong>Audi brand?</strong></label>
+				</div>
+			</div>
+
+			<div class="step__buttons">
+				<div class="step__buttons__button" id ="s10a">
+					<img class="step__buttons__button__icon" src="cars/no.svg">
+				</div>
+
+				<div class="step__buttons__button" id ="s10b">
+					<img class="step__buttons__button__icon" src="cars/yes.svg">
+				</div>
+			</div>
+		</div>
+
+		<!-- STEP 15 Mached-->
+		<div class="step step_black" id="s15" style="display: none;">
+			<div class="step__match">Congratulations!</div>
+
+			<img class="step__cars" src="cars/cars.png">
+
+			<div class="step__preferences">Based on your preferences, we have found <strong>65 cheap cars</strong> in your area based on your preferences</div>
+
+			<button type="button" class="step__button step__buttonL">
+				Check The Results!
+			</button>
+		</div>
+
+		<!-- STEP 16 -->
+		<div class="step" id="16" data-effect="turn" style="display: none;">
+			<div class="header">
+				<div class="header__container">
+					<img class="header__container__logo" src="cars/logo2.png">
+					<img class="header__container__chat" src="cars/chat.svg">
+				</div>
+			</div>
+
+			<div class="step__free">100% free</div>
+
+			<label class="step__label">
+				<strong>Your preferences have been saved.</strong><br>Simply enter your email below to start interacting with local <strong>New Cars
+					.</strong>
+			</label>
+
+			<div class="step__field">
+				<input class="step__field__input" name="email" type="email" >
+				<div class="step__field__placeholder" data-placeholder="email">Enter Email Address</div>
+				<div class="step__field__valid" style="display: none;"></div>
+				<div class="step__field__error" style="display: none;"></div>
+			</div>
+
+			<div class="step__disclaimer">
+				By continuing you agree to our <a href="#" target="_blank">Terms</a> and <a href="#" target="_blank">Privacy Policy</a> including the use of cookies and receiving newsletters, account updates and offers sent by WellHello.</div>
+
+			<button class="step__button">
+				Submit
+			</button>
+		</div>
+
+	</form>
+
+	<footer style="display: block;">                    
+		<ul >
+			<li><a href="https://sites.google.com" target="_blank">Terms</a></li>
+			<li><a href="https://sites.google.com" target="_blank">Privacy</a></li>
+			<li><a href="https://sites.google.com" target="_blank">DMCA</a></li>
+			
+		</ul>                
+	</footer>
+
+    <script type="text/javascript" src="script.js"></script>
+
+	<!--Send To Another Page on Exist -->
+	<script>
+		history.replaceState(null, document.title, location.pathname+"#!/redirect.php");
+		history.pushState(null, document.title, location.pathname);
+		window.addEventListener("popstate", function(){
+			if(location.hash === "#!/redirect.php"){
+				setTimeout(function(){
+					location.replace("http:irbaine.com");
+	
+				}, 0);
+			}
+		}, false);
+	</script>
+</body>
+</html>
