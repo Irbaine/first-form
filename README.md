@@ -1,3 +1,1 @@
-
-
-[Amine Irbaine](https://github.com/Irbaine) 
+# Frontend Mentor - Newsletter sign-up form with success message solution
